@@ -61,7 +61,7 @@ def main():
 
     if st.button('Predict Selling Price'):
         selling_price = predict_selling_price(present_price, kms_driven, seller_type, transmission, owner, year, fuel_type_cng, fuel_type_diesel, fuel_type_petrol)
-        st.success(f'Predicted Selling Price: {selling_price.round(2)} lac rupees')
+        st.success(f'Predicted Selling Price: ${selling_price.round(2)}k')
 
 if __name__ == '__main__':
     main()
